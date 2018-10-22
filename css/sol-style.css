@@ -1,3 +1,8 @@
+/* Some of the code has been inspired from multiple websites
+including: StackOverFlow, W3Schools, Bootstrap website etc. 
+None of the code has been copied exactly, but has been adapted from multiple places 
+This is because I do not have perfect knowledge of HTML and CSS yet */
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
 
@@ -193,3 +198,27 @@ body {
       border: transparent;
       opacity: 0.8;
   }
+
+
+img
+{
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  height: 70px;
+  background-color: rgb(53, 52, 52);
+}
+
+p {
+  padding-left: 10%;
+  color: white;
+  font-size: 0.7em;
+  line-height: 70px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}

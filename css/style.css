@@ -1,3 +1,8 @@
+/* Some of the code has been inspired from multiple websites
+including: StackOverFlow, W3Schools, Bootstrap website etc. 
+None of the code has been copied exactly, but has been adapted from multiple places 
+This is because I do not have perfect knowledge of HTML and CSS yet */
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
 body {
@@ -7,38 +12,40 @@ body {
     height: auto !important;
     min-height: 100%;
     padding: 20px 80px;
-    margin:  0 0 25px;
+    margin: 0 0 25px;
     z-index: 10;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: red;
     font-size: 16px;
     line-height: 26px;
     background-color: black;
-    font-family: Helvetica,sans-serif;
+    font-family: Helvetica, sans-serif;
     line-height: 3rem;
     color: #d4d4dc;
     margin-bottom: 50px;
     background-image: url(../img/screenshot.jpg);
 }
-header
-{
+html {
+    height: 100%;
+}
+header {
     margin: 240px auto;
     position: relative;
 }
+
 #logo {
     color: #FFDC00;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 150px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: #EDEDED 3px 2px 0;
-  position: relative;
-  text-align: center;
-  align-self: center;
-  left: 15%;
-  
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    text-align: justify;
+    align-self: justify;
+    left: 15%;
 }
 
 nav {
@@ -57,7 +64,6 @@ nav ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-
 }
 
 nav#top_nav ul {
@@ -70,10 +76,9 @@ nav#top_nav ul {
     margin: 0;
     padding: 0 0 0 15px;
     list-style: none;
-} 
+}
 
-#menu
-{
+#menu {
     width: 1090px;
     height: 42px;
     list-style: none;
@@ -109,10 +114,28 @@ nav#top_nav ul {
 }
 
 #menu li:hover {
-      width: 203px;
-      margin: 0 -5px;
+    width: 203px;
+    margin: 0 -5px;
 }
 
 #menu a:hover {
     color: #d90075;
-  }
+}
+
+
+footer {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    height: 70px;
+    background-color: rgb(53, 52, 52);
+}
+
+p {
+    padding-left: 10%;
+    color: white;
+    font-size: 0.7em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
