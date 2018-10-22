@@ -1,7 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
+
 body {
-    /* font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif; */
+    /* padding: 20px 80px;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    margin-bottom: 50px;
+    background-image: url(../img/screenshot.jpg);
+    text-align: left;
+    align-content: center; */
+
     display: block;
     position: relative;
     height: auto !important;
@@ -16,29 +24,25 @@ body {
     background-color: black;
     font-family: Helvetica,sans-serif;
     line-height: 3rem;
-    color: #d4d4dc;
+    color: #DCD8D6;
     margin-bottom: 50px;
     background-image: url(../img/screenshot.jpg);
 }
-header
-{
-    margin: 240px auto;
-    position: relative;
-}
-#logo {
+
+h2 {
+    padding: 40px;
     color: #FFDC00;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 150px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: #EDEDED 3px 2px 0;
-  position: relative;
-  text-align: center;
-  align-self: center;
-  left: 15%;
-  
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    text-align: center;
+    align-self: center;
+    /* left: 10%; */
 }
 
 nav {
@@ -115,4 +119,77 @@ nav#top_nav ul {
 
 #menu a:hover {
     color: #d90075;
+  }
+
+
+body {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+  }
+  
+  main
+  {
+    flex: 1;
+  }
+  
+  html
+  {
+    height: 100%;
+  }
+  
+  main > div
+  {
+    display: flex;
+    height: 100%;
+  }
+  
+  main > div > section
+  {
+  padding: 1em;
+  }
+  
+  section:nth-child(1) {
+    flex-basis: 240px;
+  }
+  
+  main>div>section:nth-child(2) {
+    background-color: #252525;
+    flex: 1;
+  }
+  
+  main>div>section:nth-child(3) {
+    flex-basis: 180px;
+    flex-shrink: 0;
+  }
+  
+  section div {
+    flex: 0 0 250px;
+    /* background-color: white; */
+    margin: .5rem;
+  }
+  
+  section>div>div {
+    border-radius: 10px;
+    box-shadow: 01px3pxrgba(0, 0, 0, 0.16), 01px3pxrgba(0, 0, 0, 0.23);
+  }
+  
+ 
+  main>div>section>div:nth-child(1)
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .boxy
+  {
+      /* margin: 30px; */
+      background-color: #252525;
+      border: 20px #252525;
+      border: transparent;
+      opacity: 0.8;
   }

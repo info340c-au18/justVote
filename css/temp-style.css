@@ -1,28 +1,47 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
 body {
+    /* padding: 20px 80px;
     font-family: 'Roboto', sans-serif;
     background-color: black;
     margin-bottom: 50px;
     background-image: url(../img/screenshot.jpg);
     text-align: left;
-    align-content: center;
+    align-content: center; */
 
+    display: block;
+    position: relative;
+    height: auto !important;
+    min-height: 100%;
+    padding: 20px 80px;
+    margin:  0 0 25px;
+    z-index: 10;
+    font-family: 'Open Sans',sans-serif;
+    color: red;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: black;
+    font-family: Helvetica,sans-serif;
+    line-height: 3rem;
+    color: #DCD8D6;
+    margin-bottom: 50px;
+    background-image: url(../img/screenshot.jpg);
 }
 
-#logo {
+h2 {
+    padding: 40px;
     color: #FFDC00;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 150px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: #EDEDED 3px 2px 0;
-  position: relative;
-  text-align: center;
-  align-self: center;
-  left: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    text-align: center;
+    align-self: center;
+    /* left: 10%; */
 }
 
 nav {
@@ -104,4 +123,25 @@ nav#top_nav ul {
 blockquote
 {
     text-align: left;
+    float: right;
+}
+
+img
+{
+    padding: 50px;
+    left: 10%;
+    width: 800px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxy
+{
+    /* margin: 30px; */
+    background-color: #252525;
+    border: 20px #252525;
+    border: transparent;
+    opacity: 0.8;
 }
