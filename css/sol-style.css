@@ -223,9 +223,13 @@ p {
   letter-spacing: 1px;
 }
 
-.ri
-{
-  /* line-height: 20px; */
+footer p {
+  padding-left: 10%;
+  color: white;
+  font-size: 0.7em;
+  line-height: 70px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 768px) {
