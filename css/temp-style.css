@@ -169,6 +169,14 @@ p {
     text-transform: capitalize;
     letter-spacing: 2px;
 }
+footer p {
+    padding-left: 10%;
+    color: white;
+    font-size: 0.7em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
 
 @media (min-width: 768px) {
     body {
