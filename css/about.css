@@ -3,13 +3,13 @@
 
 body {
     /* padding: 20px 80px;
-	font-family: 'Roboto', sans-serif;
-	background-color: black;
-	margin-bottom: 50px;
-	background-image: url(../img/screenshot.jpg);
-	text-align: left;
-	align-content: center;
-	*/
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    margin-bottom: 50px;
+    background-image: url(../img/screenshot.jpg);
+    text-align: left;
+    align-content: center; */
+
     display: block;
     position: relative;
     height: auto !important;
@@ -27,122 +27,180 @@ body {
     color: #DCD8D6;
     margin-bottom: 50px;
     background-image: url(../img/screenshot.jpg);
-    /* The image source: */
 }
 
-h2 {
-    padding: 40px;
-    color: #FFDC00;
+a {
+
+    color: #4C9CF1;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90px;
-    font-weight: 800;
-    letter-spacing: -3px;
-    line-height: 1;
-    text-shadow: #EDEDED 3px 2px 0;
-    position: relative;
-    text-align: center;
-    align-self: center;
-    /* left: 10%;
-	*/
+    font-weight: bold;
+
 }
 
-nav {
-    height: 100%;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    flex: 1 1 auto;
-}
+a:hover {
 
-nav ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
+    color: #444;
 
-nav#top_nav ul {
-    display: flex;
-    width: 100%;
-    max-width: 700px;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin: 0;
-    padding: 0 0 0 15px;
-    list-style: none;
-}
-
-#menu {
-    width: 1090px;
-    height: 42px;
-    list-style: none;
-    margin: 10px 0 0 0;
-    padding: 25px 10px;
-    border-top: 4px double #AAA;
-    border-bottom: 4px double #AAA;
-    position: relative;
-    text-align: center;
-}
-
-#menu li {
-    display: inline-block;
-    width: 173px;
-    margin: 0 20px;
-    position: relative;
-}
-
-#menu li a {
-    text-transform: uppercase;
-    font-family: 'Squada One', cursive;
-    font-weight: 800;
-    display: block;
-    background: yellow;
-    padding: 2px 10px;
-    color: #333;
-    font-size: 35px;
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    background-size: 4px 4px;
-}
-
-#menu li:hover {
-    width: 203px;
-    margin: 0 -5px;
-}
-
-#menu a:hover {
-    color: #d90075;
-}
-
-blockquote {
-    text-align: left;
-    float: right;
 }
 
 img {
-    padding: 50px;
-    left: 10%;
-    width: 800px;
-    height: 600px;
+
+    width: 100%;
+
+}
+
+header {
+
+    background: #fff;
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid #4C9CF1;
+    z-index: 100;
+
+}
+
+nav {
+
+    float: right;
+    padding: 20px;
+
+}
+
+#menu-icon {
+
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: #4C8FEC url(../img/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+    background-color: #444;
+    border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+li {
+
+    display: inline-block;
+    float: left;
+    padding: 10px
+}
+
+.current {
+
+    color: #2262AD;
+
+}
+
+.section {
+    /* height: 100%; */
+    /* width: 100%; */
+    margin: 80px auto 40px;
+    position: relative;
+    padding: 20px;
     display: block;
+    box-sizing: border-box;
+    box-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cent {
     margin-left: auto;
     margin-right: auto;
 }
 
+
+body {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+main {
+    flex: 1;
+}
+
+html {
+    height: 100%;
+}
+
+main>div {
+    display: flex;
+    height: 100%;
+}
+
+main>div>section {
+    padding: 1em;
+}
+
+section:nth-child(1) {
+    flex-basis: 240px;
+}
+
+main>div>section:nth-child(2) {
+    background-color: #252525;
+    flex: 1;
+}
+
+main>div>section:nth-child(3) {
+    flex-basis: 180px;
+    flex-shrink: 0;
+}
+
+section div {
+    flex: 0 0 290px;
+    /* background-color: white; */
+    margin: 2rem;
+}
+
+section>div>div {
+    border-radius: 10px;
+    box-shadow: 01px3pxrgba(0, 0, 0, 0.16), 01px3pxrgba(0, 0, 0, 0.23);
+}
+
+
+main>div>section>div:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .boxy {
-    /* margin: 30px;
-	*/
+    /* margin: 30px; */
     background-color: #252525;
     border: 20px #252525;
     border: transparent;
     opacity: 0.8;
+}
+
+
+img {
+    height: 200px;
+    width: 200px;
 }
 
 footer {
@@ -154,22 +212,13 @@ footer {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    padding-left: 10%;
-    color: white;
-    font-size: 0.9em;
-    line-height: 1.8;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    align-content: center;
-    display: flex;
-    position: relative;
-    text-align: center;
-    align-self: center;
+
+    line-height: 1.45em;
+    margin-bottom: 20px;
+
 }
 
-footer p
-{
+footer p {
     padding-left: 10%;
     color: white;
     font-size: 0.7em;
@@ -178,47 +227,53 @@ footer p
     letter-spacing: 1px;
 }
 
-@media (min-width: 768px) {
-    body {
-        background-image: url('../img/screenshot.jpg'), center, cover;
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    header {
+
+        position: absolute;
+
     }
 
-    html {
-        height: 100%;
+    #menu-icon {
+
+        display: inline-block;
+
     }
 
-    footer {
+    nav ul,
+    nav:active ul {
+
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+
+    }
+
+    nav li {
+
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+
+    }
+
+    nav:hover ul {
+
         display: block;
-        position: fixed;
-        bottom: 0;
-        right: 0;
+
     }
 
-    main {
-        text-shadow: 1px 1px #153c43;
-    }
-}
-
-@media (min-width:992px) {
-    body {
-        background-image: url('../img/screenshot.jpg');
-    }
-
-    nav a {
-        font-size: 1.5rem;
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-}
-
-@media (min-width:1200px) {
-    body {
-        background-image: url('../img/screenshot.jpg');
+    #logo {
+        width: 200px;
+        font-size: 100%;
     }
 }
